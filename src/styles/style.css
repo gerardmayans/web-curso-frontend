@@ -1,4 +1,9 @@
 @import "base.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
 
 .cmp-header{
     min-height: 98px;
@@ -35,4 +40,40 @@
     border-radius: 40px;
     border: none;
     padding: 8px 18px;
+}
+
+.cmp-header__container-icon{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .cmp-header__container-menu{
+        display: none;
+    }
+
+    .cmp-header__container-icon{
+        display: block;
+        font-size: 28px;
+    }
+
+    .cmp-header__container-menu--active{
+        display: block !important;
+        position: absolute;
+        top: 98px;
+        background-color: var(--light-gray-color);
+        left: 0;
+        right: 0;
+        height: calc(100vh - 98px);
+        padding-top: 64px;
+    }
+
+    .cmp-header__container-menu--active ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+        margin: 0;
+        padding: 0;
+    }
+
 }
