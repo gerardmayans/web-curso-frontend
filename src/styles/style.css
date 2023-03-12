@@ -5,6 +5,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* DEFAULT STYLES */
+
+.cmp-button__primary{
+    background-color: var(--yellow-color);
+    border-radius: 40px;
+    border: none;
+    padding: 8px 18px;
+}
+
+/*  HEADER STYLES  */ 
+
 .cmp-header{
     min-height: 98px;
     background-color: var(--light-gray-color);
@@ -33,13 +44,6 @@
 .cmp-header__container-menu a{
     text-decoration: none;
     color: var(--dark-blue-color);
-}
-
-.cmp-header__container-menu button{
-    background-color: var(--yellow-color);
-    border-radius: 40px;
-    border: none;
-    padding: 8px 18px;
 }
 
 .cmp-header__container-icon{
@@ -76,4 +80,127 @@
         padding: 0;
     }
 
+}
+
+/* HERO STYLES */
+
+.cmp-hero{
+    padding: var(--spacer-xxl) 0;
+}
+.cmp-hero__image img{
+    height: 290px;
+    width: 290px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin-bottom: var(--spacer-xxxl);
+}
+
+.cmp-hero__image{
+    background-image: url("../img/backgrounds/bg-mobile.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.cmp-hero__content-title h1{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--dark-blue-color);
+    margin-bottom: var(--spacer-m);
+}
+
+.cmp-hero__content-description p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--secondary-blue-color);
+    margin-bottom: var(--spacer-m);
+}
+
+/* TABLET DESIGN*/
+@media only screen and (min-width:768px) {
+    .cmp-hero__image{
+        background-image: url("../img/backgrounds/bg-tablet.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content:flex-end;
+    }
+
+    .cmp-hero__image img{
+        height: 347px;
+        width: 347px;
+        object-fit: cover;
+        border-radius: 50%;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        margin-bottom: var(--spacer-xxxl);
+    }
+
+
+    .cmp-hero__content-title h1{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        margin-bottom: var(--spacer-l);
+    }
+
+    .cmp-hero__content-description p{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: var(--spacer-l);
+    }
+
+    .cmp-hero__content-wrapper{
+        margin-top: -100px;
+    }
+
+}
+
+
+
+/* DESKTOP DESIGN */
+
+@media only screen and (min-width:992px) {
+    
+    .cmp-hero__container{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .cmp-hero__content-wrapper{
+        margin-top: 0;
+    }
+
+    .cmp-hero__image{
+        background-image: none;
+    }
+
+    .cmp-hero__image img{
+        height: 304px;
+    }
+
+    .cmp-hero{
+        background-image: url("../img/backgrounds/bg-desktop.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content:flex-end;
+    }
+
+    .cmp-hero__content-title h1{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 72px;
+        margin-bottom: var(--spacer-l);
+    }
+
+}
+
+@media only screen and (min-width:992px) {
+    .cmp-hero__image img{
+        height: 347px;
+    }
 }

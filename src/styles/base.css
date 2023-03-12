@@ -8,4 +8,15 @@
     --light-blue-color: #C4D4E0;
     --light-gray-color: #FAFAFA;
 
+
+    /* S P A C E R S */
+
+    --spacer-xs:8px;
+    --spacer-s: 16px;
+    --spacer-m: 24px;
+    --spacer-l: 32px;
+    --spacer-xl: 48px;
+    --spacer-xxl: 64px;
+    --spacer-xxxl: 128px;
+
 }
