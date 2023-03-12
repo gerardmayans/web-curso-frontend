@@ -7,29 +7,41 @@
 
 /* DEFAULT STYLES */
 
-.cmp-button__primary{
+.cmp-button__primary {
     background-color: var(--yellow-color);
+    font-size: 12px;
     border-radius: 40px;
     border: none;
     padding: 8px 18px;
 }
 
-/*  HEADER STYLES  */ 
+.mobile-tag {
+    padding: 0 8px;
+    background-color: var(--secondary-blue-color);
+    font-size: 12px;
+    color: var(--dark-blue-color);
+    font-weight: 600;
+    line-height: 150%;
+    display: inline-block;
+    margin-bottom: var(--spacer-s);
+}
 
-.cmp-header{
+/*  HEADER STYLES  */
+
+.cmp-header {
     min-height: 98px;
     background-color: var(--light-gray-color);
     border-bottom: 8px solid var(--yellow-color);
 }
 
-.cmp-header__container{
+.cmp-header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
 }
 
-.cmp-header__container-logo img{
+.cmp-header__container-logo img {
     height: 40px;
 }
 
@@ -41,26 +53,26 @@
     list-style-type: none;
 }
 
-.cmp-header__container-menu a{
+.cmp-header__container-menu a {
     text-decoration: none;
     color: var(--dark-blue-color);
 }
 
-.cmp-header__container-icon{
+.cmp-header__container-icon {
     display: none;
 }
 
 @media (max-width: 768px) {
-    .cmp-header__container-menu{
+    .cmp-header__container-menu {
         display: none;
     }
 
-    .cmp-header__container-icon{
+    .cmp-header__container-icon {
         display: block;
         font-size: 28px;
     }
 
-    .cmp-header__container-menu--active{
+    .cmp-header__container-menu--active {
         display: block !important;
         position: absolute;
         top: 98px;
@@ -84,25 +96,28 @@
 
 /* HERO STYLES */
 
-.cmp-hero{
+.cmp-hero {
     padding: var(--spacer-xxl) 0;
 }
-.cmp-hero__image img{
-    height: 290px;
-    width: 290px;
+
+.cmp-hero__image img {
+    aspect-ratio: 1;
+    height: auto;
+    width: 100%;
+    max-width: 290px;
     object-fit: cover;
     border-radius: 50%;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     margin-bottom: var(--spacer-xxxl);
 }
 
-.cmp-hero__image{
+.cmp-hero__image {
     background-image: url("../img/backgrounds/bg-mobile.png");
     background-size: cover;
     background-position: center;
 }
 
-.cmp-hero__content-title h1{
+.cmp-hero__content-title h1 {
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -110,7 +125,7 @@
     margin-bottom: var(--spacer-m);
 }
 
-.cmp-hero__content-description p{
+.cmp-hero__content-description p {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -120,17 +135,16 @@
 
 /* TABLET DESIGN*/
 @media only screen and (min-width:768px) {
-    .cmp-hero__image{
+    .cmp-hero__image {
         background-image: url("../img/backgrounds/bg-tablet.png");
         background-size: cover;
         background-position: center;
         display: flex;
-        justify-content:flex-end;
+        justify-content: flex-end;
     }
 
-    .cmp-hero__image img{
-        height: 347px;
-        width: 347px;
+    .cmp-hero__image img {
+        max-width: 347px;
         object-fit: cover;
         border-radius: 50%;
         transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -138,21 +152,21 @@
     }
 
 
-    .cmp-hero__content-title h1{
+    .cmp-hero__content-title h1 {
         font-size: 40px;
         font-weight: 700;
         line-height: 60px;
         margin-bottom: var(--spacer-l);
     }
 
-    .cmp-hero__content-description p{
+    .cmp-hero__content-description p {
         font-weight: 400;
         font-size: 20px;
         line-height: 150%;
         margin-bottom: var(--spacer-l);
     }
 
-    .cmp-hero__content-wrapper{
+    .cmp-hero__content-wrapper {
         margin-top: -100px;
     }
 
@@ -163,34 +177,37 @@
 /* DESKTOP DESIGN */
 
 @media only screen and (min-width:992px) {
-    
-    .cmp-hero__container{
+    .cmp-hero {
+        padding: var(--spacer-xxxl) 0;
+    }
+
+    .cmp-hero__container {
         flex-direction: row-reverse;
         justify-content: flex-end;
         align-items: center;
     }
 
-    .cmp-hero__content-wrapper{
+    .cmp-hero__content-wrapper {
         margin-top: 0;
     }
 
-    .cmp-hero__image{
+    .cmp-hero__image {
         background-image: none;
     }
 
-    .cmp-hero__image img{
-        height: 304px;
-    }
-
-    .cmp-hero{
+    .cmp-hero {
         background-image: url("../img/backgrounds/bg-desktop.png");
         background-size: cover;
         background-position: center;
         display: flex;
-        justify-content:flex-end;
+        justify-content: flex-end;
     }
 
-    .cmp-hero__content-title h1{
+    .cmp-hero__image img {
+        max-width: 347px;
+    }
+
+    .cmp-hero__content-title h1 {
         font-size: 48px;
         font-weight: 700;
         line-height: 72px;
@@ -199,8 +216,97 @@
 
 }
 
+
+/* CLIENTES */
+
+.cmp-clients {
+    padding: var(--spacer-l) 0;
+}
+
+.cmp-clients__content-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--dark-blue-color);
+    margin-bottom: var(--spacer-s);
+}
+
+.cmp-clients__content-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--secondary-blue-color);
+    margin-bottom: var(--spacer-s);
+}
+
+
+.cmp-clients__logo-carousel-image {
+    max-width: 150px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 12px;
+    filter: grayscale(1);
+    opacity: .6;
+}
+
+.cmp-clients__logo-carousel-wrapper{
+    position: relative;
+}
+.cmp-clients__logo-carousel-white-left{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 70px;
+    background-image: linear-gradient(to right, white, transparent);
+    z-index: 2;
+}
+.cmp-clients__logo-carousel-white-right{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+    width: 70px;
+    background-image: linear-gradient(to left, white, transparent);
+    z-index: 2;
+}
+
+
+  /* the slides */
+  .cmp-clients  .slick-slide {
+    margin: 0 12px;
+}
+
+/* the parent */
+.cmp-clients .slick-list {
+    margin: 0 -12px;
+}
+
 @media only screen and (min-width:992px) {
-    .cmp-hero__image img{
-        height: 347px;
+
+    .cmp-clients {
+        padding: var(--spacer-xxl) 0;
+    }
+
+
+    .cmp-clients__logo-carousel-white-left, .cmp-clients__logo-carousel-white-right{
+        display: none;
+    }
+
+    .cmp-clients__logo-carousel{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        gap: var(--spacer-m);
+    }
+
+    .cmp-clients__logo-carousel-image{
+        max-height: 40px;
+    }
+
+    .cmp-clients__content-description {
+        margin-bottom: var(--spacer-xxl);
     }
 }

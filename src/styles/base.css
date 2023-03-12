@@ -1,5 +1,7 @@
 :root {
 
+    
+
     /* C O L O R E S  */
 
     --yellow-color: #F9EE67;
@@ -18,5 +20,8 @@
     --spacer-xl: 48px;
     --spacer-xxl: 64px;
     --spacer-xxxl: 128px;
+
+
+    /* F O N T S */
 
 }
