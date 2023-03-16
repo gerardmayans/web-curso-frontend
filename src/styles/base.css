@@ -1,7 +1,5 @@
 :root {
 
-    
-
     /* C O L O R E S  */
 
     --yellow-color: #F9EE67;
@@ -13,7 +11,7 @@
 
     /* S P A C E R S */
 
-    --spacer-xs:8px;
+    --spacer-xs: 8px;
     --spacer-s: 16px;
     --spacer-m: 24px;
     --spacer-l: 32px;
@@ -21,7 +19,91 @@
     --spacer-xxl: 64px;
     --spacer-xxxl: 128px;
 
+}
 
-    /* F O N T S */
 
+/* F O N T S */
+
+.title-h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.title-h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.title-h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.title-h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.body-semibold {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.body-regular {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+@media only screen and (min-width:768px) {
+    .title-h1 {
+        font-size: 40px;
+    }
+
+    .title-h2 {
+        font-size: 32px;
+    }
+
+    .title-h3 {
+        font-size: 24px;
+    }
+
+    .title-h4 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .title-h1 {
+        font-size: 48px;
+    }
+
+    .title-h2 {
+        font-size: 36px;
+    }
+
+    .title-h3 {
+        font-size: 24px;
+    }
+
+    .title-h4 {
+        font-size: 20px;
+    }
 }
