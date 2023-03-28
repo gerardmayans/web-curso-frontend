@@ -478,3 +478,88 @@
         flex: 0 0 30%; /*ESCRITORIO*/
     }
 }
+
+/* ACORDEÓN */
+
+.cmp-accordion {
+    padding: var(--spacer-l) 0;  
+}
+
+.cmp-accordion__title{
+    margin-bottom: var(--spacer-xxl);
+}
+
+.cmp-accordion__button{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--dark-blue-color) !important;
+}
+
+.cmp-accordion__button.collapsed{
+    color: var(--secondary-blue-color) !important;
+}
+
+.cmp-accordion__number {
+    color: var(--dark-blue-color);
+}
+
+.cmp-accordion__body-item{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-blue-color);
+    padding:9px 0;
+
+}
+
+.cmp-accordion__body-item-title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--secondary-blue-color);
+}
+.cmp-accordion__body-item-description{
+    font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+color: var(--dark-blue-color);
+text-transform: uppercase;
+
+
+}
+
+
+
+/* BOOTSTRAP OVERRIDE */
+.accordion-item{
+    border: none;
+}
+
+.accordion-button {
+    border-bottom: 1px solid var(--light-blue-color);
+    gap: var(--spacer-s);
+}
+.accordion-button:not(.collapsed){
+    background-color: white;
+    box-shadow: none;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+    border-color: unset;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../img/icons/chevron-down.svg);
+}
+
+.accordion-body {
+    padding: 0;
+    padding-top: 20px
+}
