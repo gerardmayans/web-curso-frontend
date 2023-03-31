@@ -204,7 +204,8 @@
 
     .cmp-hero {
         background-image: url("../img/backgrounds/bg-desktop.png");
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
         background-position: center;
         display: flex;
         justify-content: flex-end;
@@ -254,6 +255,13 @@
     margin: 0 12px;
     filter: grayscale(1);
     opacity: .8;
+    transition: filter .2s ease-out;
+
+}
+
+.cmp-clients__logo-carousel-image:hover {
+    filter: grayscale(0);
+    transition: filter .2s ease-out;
 }
 
 .cmp-clients__logo-carousel-wrapper {
@@ -578,6 +586,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border: none;
+    border-bottom: 1px solid var(--light-blue-color);
 }
 
 .cmp-portfolio__circle {
@@ -707,6 +717,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    border: none;
     color: var(--secondary-blue-color);
     text-transform: uppercase;
 }
