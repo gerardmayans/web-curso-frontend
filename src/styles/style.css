@@ -5,6 +5,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.cmp-portfolio a {
+    all: unset;
+}
+
+.cmp-portfolio a:hover {
+    all: unset;
+}
 /* DEFAULT STYLES */
 
 .cmp-button__primary {
@@ -596,6 +603,14 @@
     border: none;
     border-bottom: 1px solid var(--light-blue-color);
 }
+.cmp-portfolio__tabs-wrapper li {
+    cursor: pointer;
+}
+.cmp-portfolio__tabs-wrapper li a:hover{
+    all: unset
+    /* padding: 8px; */
+}
+
 
 .cmp-portfolio__circle {
     height: 127px;
@@ -824,7 +839,7 @@
     opacity: 1;
     /* Firefox */
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 150%;
 }
 
@@ -832,7 +847,7 @@
     /* Internet Explorer 10-11 */
     color: var(--light-blue-color);
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 150%;
 }
 
@@ -840,7 +855,7 @@
     /* Microsoft Edge */
     color: var(--light-blue-color);
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 150%;
 }
 
@@ -885,7 +900,7 @@
     margin: 0;
 }
 
-.cmp-footer__links a, a:hover{
+.cmp-footer__links a{
     color: white;
     text-decoration: none;
     margin-left: 24px;
